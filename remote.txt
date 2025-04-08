@@ -1,0 +1,22 @@
+To find the names and addresses (URLs) of the remote repositories of a Git project:
+git remote -v
+
+Output:
+origin  https://github.com/DozyXYZ/git-practice.git (fetch)
+origin  https://github.com/DozyXYZ/git-practice.git (push)
+
+Need more detailed information (like remote fetch/push configurations)?
+git remote show origin
+
+Output:
+* remote origin
+  Fetch URL: https://github.com/DozyXYZ/git-practice.git
+  Push  URL: https://github.com/DozyXYZ/git-practice.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
